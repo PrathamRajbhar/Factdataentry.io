@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    /* background-color: rgb(1, 10, 112); */
+}
+
+.cointaner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(106, 100, 214, 0.772);
+}
+
+#page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.border-div {
+    padding: 1.5px;
+    background-color: rgb(14, 37, 129);
+    width: 90%;
+    margin-bottom: 25px;
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+    100% {
+        width: 100%;
+    }
+
+    80% {
+        width: 40%;
+    }
+}
+
+label {
+    font-size: 20px;
+    font-family: monospace;
+    border-bottom: 2px solid;
+}
+
+input[type="text"] {
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin-top: 7px;
+    font-size: 15px;
+    width: -webkit-fill-available;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(144, 123, 123);
+    font-size: 16px;
+}
+
+input[type="datetime-local"] {
+    padding: 10px;
+    width: -webkit-fill-available;
+    border: none;
+    border-radius: 5px;
+    margin-top: 7px;
+    outline: none;
+}
+
+#bg {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+input[type=submit] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: royalblue;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+}
+
+#check-list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+#check-list a:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
